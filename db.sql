@@ -145,6 +145,7 @@ CREATE TABLE error_billing (
     invoice_id VARCHAR(20),
     error_reason VARCHAR(255)
 );
+
 CREATE TABLE error_usage (
     error_id INT AUTO_INCREMENT PRIMARY KEY,
     customer_id VARCHAR(20),
