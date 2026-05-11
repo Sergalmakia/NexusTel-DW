@@ -6,7 +6,7 @@ from sqlalchemy import create_engine
 # =========================
 
 username = "root"
-password = "Aghuke2003"
+password = "Your_Password"
 host = "localhost"
 database = "nexustel_dw"
 
