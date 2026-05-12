@@ -151,3 +151,14 @@ CREATE TABLE error_usage (
     customer_id VARCHAR(20),
     error_reason VARCHAR(255)
 );
+CREATE TABLE staging_customer_updates (
+    customer_id VARCHAR(20),
+    full_name VARCHAR(100),
+    gender VARCHAR(10),
+    age INT,
+    region VARCHAR(50),
+    subscription_type VARCHAR(50),
+    registration_date DATE,
+    customer_status VARCHAR(20),
+    customer_segment VARCHAR(50)
+);
