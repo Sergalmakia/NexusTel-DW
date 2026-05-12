@@ -61,3 +61,19 @@ usage_df.to_sql(
 )
 
 print("Usage data loaded successfully.")
+
+# =========================
+# LOAD CUSTOMER UPDATES
+# =========================
+
+updates_df = pd.read_csv("../data/raw/customer_updates.csv")
+
+updates_df.to_sql(
+    name="staging_customer_updates",
+    con=engine,
+    if_exists="append",
+    index=False,
+    chunksize=5000
+)
+
+print("Customer updates loaded successfully.")
